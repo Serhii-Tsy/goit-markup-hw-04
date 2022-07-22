@@ -152,6 +152,7 @@ img {
 }
 .hero-section {
   padding: 200px 0 200px 0;
+  margin: 0 auto;
   text-align: center;
   background-image: linear-gradient(
       to right,
@@ -161,7 +162,7 @@ img {
     url(../images/hero/hero-background.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 1600px;
+  max-width: 1600px;
   background-color: var(--background-hero-color);
 }
 .main-title {
@@ -240,16 +241,16 @@ img {
 .feature-img {
   display: flex;
   align-items: center;
-  padding: 25px 100px;
+ justify-content: center;  
   margin-bottom: 30px;
   max-width: 270px;
-  height: auto;
-  background: var(--background-feature-img);
+  height: 120px;
+    background: var(--background-feature-img);
   border-radius: 4px;
 }
 
-.feature-icon {
-}
+/* .feature-icon {
+} */
 
 .feature-prop {
   display: inline-flex;
@@ -320,8 +321,7 @@ img {
   line-height: 1.18;
 }
 .team-prof {
-  margin: 0 0 30px;
-  text-align: center;
+    text-align: center;
   font-size: 16px;
   line-height: 1.18;
   color: var(--gray-txt-color);
@@ -547,6 +547,7 @@ img {
 }
 
 .portfolio-list {
+  display: block;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -558,7 +559,7 @@ img {
   flex-basis: calc((100% - var(--indent) * var(--items)) / var(--items));
   margin: calc(var(--indent) / 2);
 }
-.portfolio-box-item:hover {
+.portfolio-list:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
